@@ -3,7 +3,7 @@ import Card from "./Card";
 
 function Listing() {
   return (
-    <div className="bg-[#faf8ff] max-h-max min-h-[10rem] overflow-scroll pt-4 absolute top-[13rem] left-0 gap-4 flex flex-col  w-full">
+    <div className="bg-[#faf8ff] pb-20 h-screen overflow-scroll pt-4 absolute top-[13rem] left-0 gap-4 flex flex-col  w-full">
       <Card />
       <Card />
       <Card />

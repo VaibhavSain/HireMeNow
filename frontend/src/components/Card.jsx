@@ -4,7 +4,7 @@ import bag from "../assests/bag.png";
 
 function Card() {
   return (
-    <div className="bg-[#ffffff] cursor-pointer rounded-lg left-[3rem] border-[1px] border-grey-300 relative h-[8rem] w-[80rem]">
+    <div className="bg-[#ffffff]   cursor-pointer rounded-lg left-[3rem] border-[1px] border-grey-300 relative min-h-[8rem] w-[80rem]">
       <img
         className="h-[3rem] absolute top-[2rem] border-2 border-black left-[2rem] w-[3rem]"
         src={bag}

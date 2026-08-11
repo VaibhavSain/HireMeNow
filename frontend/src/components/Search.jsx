@@ -3,7 +3,7 @@ import locationIcon from "../assests/location.svg";
 import magnifyingIcon from "../assests/magnifying.svg";
 function Search() {
   return (
-    <div className="h-[8rem]   flex items-center justify-center w-full bg-blue-300">
+    <div className="h-[8rem]   flex items-center justify-center w-full bg-[#36f4c2]">
       <div className="bg-[#ffffff] relative shadow-sm shadow-grey-300 rounded-xl h-[3.50rem] w-[70rem]">
         <div className="flex relative flex-row h-full">
           <img

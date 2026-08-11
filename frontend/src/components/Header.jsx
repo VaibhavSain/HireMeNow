@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <header className="h-[5rem] bg-[#faf8ff] relative top-0 left-0 shadow-sm shadow-gray-400 w-full">
+    <header className="h-[5rem] bg-[#f6cb61] relative top-0 left-0 shadow-sm shadow-gray-400 w-full">
       <div className="absolute flex top-[1.50rem] left-[2rem]">
         <img src={logo} alt="logo-img" className="h-[2rem] w-[2rem]" />
         <h1 className="text-2xl ml-2 font-medium">HireMeNow</h1>
