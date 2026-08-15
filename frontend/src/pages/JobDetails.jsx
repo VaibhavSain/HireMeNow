@@ -8,7 +8,7 @@ import circleIcon from "../assests/circle.svg";
 
 function JobDetails() {
   return (
-    <div className="h-[60rem] w-screen">
+    <div className="h-[62rem] w-screen">
       <div className="h-[10rem] relative  w-full bg-red-300">
         <h2 className="text-4xl absolute left-[2rem] top-[2rem] font-medium">
           Senior Frontend Engineer
@@ -75,7 +75,7 @@ function JobDetails() {
           shape our frontend engineering standards.
         </p>
       </div>
-      <div className="bg-red-300 pt-2 pb-2 pl-4 pr-4 flex flex-col justify-evenly absolute rounded-lg left-[2rem] top-[54rem] h-[14rem] border border-black w-[48rem]">
+      <div className="bg-red-300 pt-2 pb-2 pl-4 pr-4 flex flex-col justify-evenly absolute rounded-lg left-[2rem] top-[55rem] h-[14rem] border border-black w-[48rem]">
         <h3 className="text-2xl  font-medium ">Requirements</h3>
         <ul className="flex flex-col gap-4">
           <li className="flex flex-row">
