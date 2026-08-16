@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require("mongoose")
 const Schema = mongoose.Schema;
 
 
@@ -32,6 +32,10 @@ const jobSchema = new Schema({
     },
     responsibilities: {
         type: [String]
+    },
+    jobLink: {
+        type: String,
+        required: true,
     }
 }, { timestamps: true })
 
