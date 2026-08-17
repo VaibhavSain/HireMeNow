@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const jobRoutes = require("./routes/Jobs.js")
 //express app
 const app = express();
+const PORT = process.env.PORT || 5000;
 
 //routes
 app.use("/api/jobs", jobRoutes);
@@ -13,10 +14,9 @@ app.use((req, res, next) => {
 })
 
 //connect to db
-
 mongoose.connect(process.env.MONGO_URL).then(() => {
   //Listening for requests
-  app.listen(process.env.PORT || 4000, () => {
+  app.listen(PORT, () => {
     console.log("Connect to db & listening on port", process.env.PORT);
   });
 }).catch((error) => {
