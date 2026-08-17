@@ -10,7 +10,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Jobs />} />
-        <Route path='/details' element={<JobDetails />} />
+        <Route path='/details/:id' element={<JobDetails />} />
       </Routes>
       <Footer />
     </div>

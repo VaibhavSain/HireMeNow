@@ -16,9 +16,14 @@ function Header() {
           src={logo}
           onClick={handleFindJob}
           alt="logo-img"
-          className="h-[2rem] w-[2rem]"
+          className="h-[2rem] rounded-2xl cursor-pointer w-[2rem]"
         />
-        <h1 className="text-2xl ml-2 font-medium">HireMeNow</h1>
+        <h1
+          onClick={handleFindJob}
+          className="text-2xl cursor-pointer ml-2 font-medium"
+        >
+          HireMeNow
+        </h1>
       </div>
       <div className="absolute flex top-[1.50rem] right-[2rem]">
         <nav className="flex font-medium text-lg  flex-row gap-8">

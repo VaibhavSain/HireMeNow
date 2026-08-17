@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function Listing() {
   const [data, setData] = useState([]);
-
+  const navigate = useNavigate();
   useEffect(() => {
     const fetchJobs = async () => {
       try {
@@ -21,7 +22,7 @@ function Listing() {
   return (
     <div className="bg-[#faf8ff] pb-20 h-screen overflow-scroll pt-4 absolute top-[13rem] left-0 gap-4 flex flex-col w-full">
       {data.map((job) => (
-        <Card key={job._id} />
+        <Card key={job._id} job={job} />
       ))}
     </div>
   );
