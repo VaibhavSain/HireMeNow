@@ -5,11 +5,9 @@ const { createJob, deleteJob, getJob, getJobs } = require("../controllers/jobCon
 const router = express.Router();
 router.use(express.json());
 router.use(cors({
-    origin: [
-        "*"
-    ],
+    origin: "https://hireindiano1.netlify.app",
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
-    credentials: true
+    allowedHeaders: ["Content-Type", "Authorization"],
 }));
 //get all jobs
 router.get("/", getJobs);
