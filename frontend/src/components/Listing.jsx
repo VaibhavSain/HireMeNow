@@ -9,7 +9,7 @@ function Listing() {
     const fetchJobs = async () => {
       try {
         const response = await axios.get(
-          "https://hiremenow-backend-qxi6.onrender.com/api/jobs",
+          "https://hire-me-now-sigma.vercel.app/api/jobs",
         );
 
         setData(response.data);

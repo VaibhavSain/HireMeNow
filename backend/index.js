@@ -10,9 +10,7 @@ const PORT = process.env.PORT || 5000;
 
 //routes
 app.use("/api/jobs", jobRoutes);
-app.use(cors({
-  origin: "http://localhost:3000",
-}));
+app.use(cors());
 //middleware
 app.use((req, res, next) => {
   console.log(req.path, req.method);
