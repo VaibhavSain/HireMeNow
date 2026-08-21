@@ -8,7 +8,7 @@ function Card({ job }) {
   return (
     <div
       onClick={() => navigate(`/details/${job._id}`)}
-      className="bg-[#ffffff]   cursor-pointer rounded-lg left-[3rem] border-[1px] border-grey-300 relative min-h-[8rem] w-[80rem]"
+      className="bg-red-300   cursor-pointer rounded-lg left-[3rem] border-[1px] border-grey-300 relative min-h-[8rem] w-[80rem]"
     >
       <img
         className="h-[3rem] absolute top-[2rem] border-2 border-black left-[2rem] w-[3rem]"
