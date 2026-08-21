@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
 
 function Listing() {
   const [data, setData] = useState([]);
-  const navigate = useNavigate();
+
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        const response = await axios.get("http://localhost:4000/api/jobs");
+        const response = await axios.get(
+          `${process.env.REACT_APP_API_URL}/api/jobs/`,
+        );
+
         setData(response.data);
       } catch (error) {
         console.error(error);

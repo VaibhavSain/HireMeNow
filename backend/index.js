@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 require("dotenv").config();
 const mongoose = require('mongoose');
 const jobRoutes = require("./routes/Jobs.js")
@@ -6,8 +7,10 @@ const jobRoutes = require("./routes/Jobs.js")
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+
 //routes
 app.use("/api/jobs", jobRoutes);
+app.use(cors());
 //middleware
 app.use((req, res, next) => {
   console.log(req.path, req.method);

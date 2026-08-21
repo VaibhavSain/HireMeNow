@@ -5,6 +5,7 @@ import { Route, Routes } from 'react-router-dom'
 import JobDetails from './pages/JobDetails.jsx'
 
 function App() {
+
   return (
     <div className="App h-screen w-screen">
       <Header />
