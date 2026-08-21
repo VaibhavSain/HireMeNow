@@ -9,12 +9,14 @@ function Listing() {
     const fetchJobs = async () => {
       try {
         const response = await axios.get(
-          `${process.env.REACT_APP_API_URL}/api/jobs/`,
+          "https://hiremenow-backend-qxi6.onrender.com/api/jobs",
         );
 
         setData(response.data);
       } catch (error) {
-        console.error(error);
+        console.error("Failed to fetch jobs:", error);
+        console.error("Response:", error.response);
+        console.error("Message:", error.message);
       }
     };
 
