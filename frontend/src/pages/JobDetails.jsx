@@ -14,9 +14,7 @@ function JobDetails() {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        const response = await axios.get(
-          `http://localhost:4000/api/jobs/${id}`,
-        );
+        const response = await axios.get(`/api/jobs/${id}`);
         setJob(response.data);
       } catch (error) {
         console.error("Error fetching job:", error);
@@ -28,7 +26,7 @@ function JobDetails() {
   if (!job) {
     return (
       <div className="w-screen h-screen flex font-medium items-center justify-center text-3xl">
-        Job Not Found
+        Please Wait A Sec...
       </div>
     );
   }
