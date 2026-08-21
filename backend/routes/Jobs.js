@@ -4,7 +4,7 @@ const Job = require("../models/jobModel");
 const { createJob, deleteJob, getJob, getJobs } = require("../controllers/jobController")
 const router = express.Router();
 router.use(express.json());
-app.use(cors({
+router.use(cors({
     origin: [
         "http://localhost:3000",
         "http://localhost:5173",
