@@ -6,9 +6,7 @@ const router = express.Router();
 router.use(express.json());
 router.use(cors({
     origin: [
-        "http://localhost:3000",
-        "http://localhost:5173",
-        "https://hireindiano1.netlify.app"
+        "*"
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
     credentials: true
