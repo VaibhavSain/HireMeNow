@@ -24,7 +24,7 @@ function Listing() {
   }, []);
 
   return (
-    <div className="bg-[#faf8ff] pb-20 h-screen overflow-scroll pt-4 absolute top-[13rem] left-0 gap-4 flex flex-col w-full">
+    <div className="bg-[#faf8ff]   pb-20 h-screen overflow-scroll pt-4 absolute top-[13rem] left-0 gap-4 flex flex-col w-full">
       {loading ? (
         <div className="flex font-medium text-black  justify-center items-center h-[20rem] w-screen  text-2xl">
           Please wait...
